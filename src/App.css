@@ -1,0 +1,79 @@
+
+body {
+  background: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v463-aum-16-abstractbackground_1.jpg?auto=format&bg=F4F4F3&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-1.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1200&s=5c5f3de7ec43d1f8d7ce404a3276a00d")fixed;
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One|Raleway:800|Roboto:900&display=swap');
+
+h5{
+  font-family: 'Raleway', sans-serif;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+  color: whitesmoke;
+  text-shadow: 2px 2px #2b00ffac;
+}
+
+.card-body img {
+   max-width: 100%;
+   height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+
+.card-text {
+  text-align: center;
+}
+
+.centerButtons{
+  text-align: center; 
+}
+
+.cardText{
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Black Ops One', cursive;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
