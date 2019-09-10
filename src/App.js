@@ -25,7 +25,7 @@ import SavedeventsList from "./components/savedevents-list.component";
 
 function App() {
   return (
-    <body>
+    
     <Router>
       
       <div className="container">
@@ -49,7 +49,6 @@ function App() {
           <Route path="/tmtest" exact component={Ticketmaster} />    
       </div>
     </Router>
-    </body>
   );
 }
 

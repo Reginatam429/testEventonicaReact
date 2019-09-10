@@ -8,7 +8,7 @@ const Event = (props) => {
     <div className="col-md-6">
         <Card className="card.mb-4.shadow-sm">
             <CardBody>
-                <img src={event.images[1].url} />
+                <img alt='' src={event.images[1].url} />
                <h5 className="card-text">{event.name}</h5> 
                <p className="card-text">
                  <strong>Date: {event.dates.start.dateTime}</strong>

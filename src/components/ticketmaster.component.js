@@ -33,7 +33,7 @@ class Ticketmaster extends Component {
 
                 <div>{this.state.event.name}</div>
                 <div>{this.state.event.classifications[0].segment.name}</div>
-                <img src={this.state.event.images[0].url} />
+                <img alt= '' src={this.state.event.images[0].url} />
                 <div>{this.state.event.dates.start.dateTime}</div>
                 <div>{this.state.event._embedded.venues[0].name}</div>
             </div>
