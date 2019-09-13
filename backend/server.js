@@ -34,8 +34,11 @@ if (process.env.NODE_ENV === 'production') {
     app.get('*', function(req, res) {
       res.sendFile(path.join(__dirname, 'build', 'index.html'));
     });
+
+    console.log(path.join(__dirname, 'build', 'index.html'));
   }
-  
+
+
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });
