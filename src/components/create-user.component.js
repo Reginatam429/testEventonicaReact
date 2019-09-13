@@ -44,14 +44,13 @@ export default class CreateUser extends Component {
             "age": this.state.age
         }
 
-        console.log(user);
-        alert("Congrats! User "+ this.state.username + " has been created.");
-
         axios.post('/user/add', user)
             .then(res => console.log(res.data));
 
+            console.log(user);
+        alert("Congrats! User "+ this.state.username + " has been created.");
         
-        // window.location = "/create/user";
+        window.location = "/create/user";
     }
     render() {
         return (
