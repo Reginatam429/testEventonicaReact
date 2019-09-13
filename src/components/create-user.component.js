@@ -50,7 +50,7 @@ export default class CreateUser extends Component {
             console.log(user);
         alert("Congrats! User "+ this.state.username + " has been created.");
         
-        window.location = "/create/user";
+        // window.location = "/create/user";
     }
     render() {
         return (
