@@ -28,8 +28,6 @@ app.use('/events', eventsRouter);
 app.use('/savedevents', savedeventsRouter);
 
 if (process.env.NODE_ENV === 'production') {
-  console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
-  console.log(path.join(__dirname, 'build', 'index.html'));
     // Serve any static files
     app.use(express.static(path.join(__dirname, 'build')));
   // Handle React routing, return all requests to React app
