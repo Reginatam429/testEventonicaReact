@@ -47,7 +47,7 @@ export default class CreateUser extends Component {
         console.log(user);
         alert("Congrats! User "+ this.state.username + " has been created.");
 
-        axios.post('http://localhost:5000/user/add', user)
+        axios.post('/user/add', user)
             .then(res => console.log(res.data));
 
         
