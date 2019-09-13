@@ -11,9 +11,9 @@ export default class CreateUser extends Component {
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
-            username: "Name",
-            email: "email",
-            age: 0
+            username: "",
+            email: "",
+            age: ""
         }
     }
 
@@ -65,7 +65,8 @@ export default class CreateUser extends Component {
                         required
                         className="form-control"
                         value={this.state.username}
-                        onChange={this.onChangeUsername} />
+                        onChange={this.onChangeUsername}
+                        placeholder="Enter Name…" />
                 </div>
 
                 <div className="form-group">
@@ -74,7 +75,8 @@ export default class CreateUser extends Component {
                         required
                         className="form-control"
                         value={this.state.email}
-                        onChange={this.onChangeEmail} />
+                        onChange={this.onChangeEmail} 
+                        placeholder="Enter Email..."/>
                 </div>
 
                 <div className="form-group">
@@ -83,7 +85,8 @@ export default class CreateUser extends Component {
                         required
                         className="form-control"
                         value={this.state.age}
-                        onChange={this.onChangeAge} />
+                        onChange={this.onChangeAge} 
+                        placeholder="Enter Age…"/>
                 </div>
 
                 <div className="form-group">
