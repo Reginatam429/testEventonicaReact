@@ -44,7 +44,7 @@ export default class CreateUser extends Component {
             "age": this.state.age
         }
 
-        axios.post('https://eventonica-react-sf.herokuapp.com/user/add', user)
+        axios.post('/user/add', user)
             .then(res => console.log(res.data));
 
             console.log(user);
