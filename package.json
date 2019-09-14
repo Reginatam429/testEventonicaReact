@@ -30,11 +30,11 @@
     "reactstrap": "^8.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "client": "react-scripts start",
-    "server": "nodemon server",
+    "server": "node ./backend/server.js",
     "eject": "react-scripts eject",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "npm run build"
