@@ -31,7 +31,7 @@
     "reactstrap": "^8.0.1"
   },
   "scripts": {
-    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "start": "node ./backend/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "client": "react-scripts start",
