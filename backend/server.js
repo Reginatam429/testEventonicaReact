@@ -1,6 +1,7 @@
 const express = require('express');
 // const bodyParser = require('body-parser');
 const cors = require('cors');
+const MongoClient = require("mongodb").MongoClient;
 
 require('dotenv').config();
 
@@ -13,7 +14,11 @@ app.use(cors());
 app.use(express.json());
 
 const uri = process.env.ATLAS_URI;
-mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true});
+// mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true});
+const client = await new MongoClient(process.env.MONGODB_URI,{ useNewUrlParser: true});
+ client.connect();
+mongoose.connection.once('open', () => { console.log('MongoDB Connected'); });
+mongoose.connection.on('error', (err) => { console.log('MongoDB connection error: ', err); });
 
 const connection = mongoose.connection;
 connection.once('open', () => {
