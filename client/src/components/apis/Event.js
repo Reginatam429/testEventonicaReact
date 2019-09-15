@@ -8,17 +8,17 @@ const Event = (props) => {
     <div className="col-md-6">
         <Card className="card.mb-4.shadow-sm">
             <CardBody>
-                <img alt='' src={event.images[1].url} />
+                <img alt='' src={event.event_img} />
                <h5 className="card-text">{event.name}</h5> 
                <p className="card-text">
-                 <strong>Date: {event.dates.start.dateTime}</strong>
+                 <strong>Date: {event.event_date}</strong>
                </p>
 
                <p className="card-text">
-                 <strong>Location: {event._embedded.venues[0].name}</strong>
+                 <strong>Location: {event.event_venue ? event.event_venue+''+event.event_address : event.event_address}</strong>
                </p>
                <p className="card-text">
-                 <strong>Category: {event.classifications[0].segment.name}</strong>
+                 <strong>Category: {event.event_category}</strong>
                </p>
                
                <br></br>
